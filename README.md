@@ -41,8 +41,8 @@
 
 ## 操作指南
 
-- **仅解锁 BIOS**：[查看教程](./doc/patch_bios.md)
-- **解锁 BIOS和自定义开机动画、修改 EC 并安装经典键盘**：[查看教程](./doc/patch_bios_and_ec.md)
+- **仅解锁 BIOS**：[查看教程](./doc/patch_BIOS.md)
+- **解锁 BIOS和自定义开机动画、修改 EC 并安装经典键盘**：[查看教程](./doc/patch_BIOS_and_EC.md)
 
 ---
 

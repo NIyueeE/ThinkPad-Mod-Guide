@@ -41,8 +41,8 @@ Before proceeding, please ensure your device and its current BIOS version are co
 
 ## Guides
 
-- **For BIOS Unlocking Only**: [View Tutorial](./doc/patch_bios.md)
-- **For BIOS Unlocking and Custom Logo, EC Modding, and Classic Keyboard Installation**: [View Tutorial](./doc/patch_bios_and_ec.md)
+- **For BIOS Unlocking Only**: [View Tutorial](./doc/patch_BIOS.en.md)
+- **For BIOS Unlocking and Custom Logo, EC Modding, and Classic Keyboard Installation**: [View Tutorial](./doc/patch_BIOS_and_EC.en.md)
 
 ---
 
