@@ -8,6 +8,10 @@
 - **自定义开机动画**：替换默认的开机 Logo。
 - **修改 EC (Embedded Controller)**：适配并启用经典的七行键盘。
 
+![overview](./assets/pictures/README/overview.jpg)
+
+![patched_bios](./assets/pictures/README/patched_bios.jpg)
+
 ---
 
 ## 兼容设备列表

@@ -8,6 +8,10 @@ This project integrates the programmer-free BIOS modding tool [**1vyrain**](http
 - **Custom Boot Logo**: Replace the default startup animation with a custom image.
 - **EC Modification**: Patch the Embedded Controller to enable support for the classic 7-row ThinkPad keyboard.
 
+![overview](./assets/pictures/README/overview.jpg)
+
+![patched_bios](./assets/pictures/README/patched_bios.jpg)
+
 ---
 
 ## Compatibility
