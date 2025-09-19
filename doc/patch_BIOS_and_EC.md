@@ -9,10 +9,10 @@
 ## 一、制作自定义的bios文件
 
 1. windows系统(如果你使用UEFITool的linux或其他系统的版本的话, 就不是必要)
-
 2. [UEFITool](https://github.com/LongSoft/UEFITool), 注意截止到目前不能使用带有NE(New Engine)的版本, 因为似乎还没有替换功能
 
    - 官方[下载地址](https://github.com/LongSoft/UEFITool/releases/0.26.0)
    - 此项目中的[备份](../assets/LongSoft-UEFITool/)
-
-   
+3. [HxD](https://mh-nexus.de/en/hxd), 或者其他适合于你的16进制编辑器, 我这里只用HxD作为演示
+   - 官方[下载地址](https://mh-nexus.de/en/downloads.php?product=HxD20)
+   - 此项目中的[备份]()
