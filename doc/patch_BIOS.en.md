@@ -5,7 +5,7 @@
 This guide provides a detailed walkthrough for unlocking your ThinkPad's BIOS using the [1vyrain](https://github.com/n4ru/1vyrain) utility. The process closely follows the official documentation but is presented here with additional clarifications and images to ensure a smooth experience.
 
 > [!IMPORTANT]
-> This document covers the BIOS unlocking procedure only. If you wish to unlock the BIOS and patch the EC for classic keyboard support, please follow the [BIOS Unlock and EC Patch Guide](./patch_bios_and_ec.md) instead.
+> This document covers the BIOS unlocking procedure only. If you wish to unlock the BIOS and patch the EC for classic keyboard support, please follow the [BIOS Unlock and EC Patch Guide](./patch_BIOS_and_EC.en.md) instead.
 
 ---
 
