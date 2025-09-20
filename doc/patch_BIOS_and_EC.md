@@ -29,9 +29,9 @@
    - **X230t**: [gcuj32us.exe](https://download.lenovo.com/pccbbs/mobiles/gcuj32us.exe)
    - 此项目中也有对应[备份](../assets/Lenovo-upgrader)
    
-   > [!Warning]
-   >
-   > 此上下载链接来自于[hamishcoleman/thinkpad-ec/Descriptions.txt](https://github.com/hamishcoleman/thinkpad-ec/blob/master/Descriptions.txt), 可能有错误注意对照一下[版本号](../README.md)。
+> [!Warning]
+>
+> 此上下载链接来自于[hamishcoleman/thinkpad-ec/Descriptions.txt](https://github.com/hamishcoleman/thinkpad-ec/blob/master/Descriptions.txt), 可能有错误注意对照一下[版本号](../README.md)。
 
 ### 自定义流程
 
