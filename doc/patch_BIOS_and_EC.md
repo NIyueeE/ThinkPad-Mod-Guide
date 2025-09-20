@@ -37,11 +37,11 @@
 
 1. windows系统下点击运行升级系统, 选择合适的位置安装, 并且最后取消掉`Install ThinkPad BIOS Update Utility now`
 
-![install_upgrader](C:\respositories\Thinkpad-Mod-Guide\assets\pictures\patch_BIOS_and_EC\upgrader_install.png)
+![install_upgrader](..\assets\pictures\patch_BIOS_and_EC\upgrader_install.png)
 
 2. 进入你的安装目录, 按如下路径将后缀为`.FL1`的文件复制到合适的位置
 
-![FL1_file](C:\respositories\Thinkpad-Mod-Guide\assets\pictures\patch_BIOS_and_EC\FL1_file.png)
+![FL1_file](..\assets\pictures\patch_BIOS_and_EC\FL1_file.png)
 
 3. 对此`.FL1`文件进行“去头截取”操作, 之前可重命名此文件为`BIOS.FL1`
 
