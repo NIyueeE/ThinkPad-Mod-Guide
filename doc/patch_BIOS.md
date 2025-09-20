@@ -5,7 +5,7 @@
 本教程详细描述了如何使用 [1vyrain](https://github.com/n4ru/1vyrain) 工具解锁您的 ThinkPad BIOS。此流程基本遵循官方指南，但提供了更详尽的步骤和图文说明，以确保操作清晰易懂。
 
 > [!IMPORTANT]
-> 本文档仅涵盖解锁 BIOS 的过程。如果您希望在解锁 BIOS 的同时修改 EC 以适配经典键盘，请参阅 [解锁 BIOS 并修改 EC 指南](./patch_bios_and_ec.md)。
+> 本文档仅涵盖解锁 BIOS 的过程。如果您希望在解锁 BIOS 的同时修改 EC 以适配经典键盘，请参阅 [解锁 BIOS 并修改 EC 指南](./patch_BIOS_and_EC.md)。
 
 ---
 
