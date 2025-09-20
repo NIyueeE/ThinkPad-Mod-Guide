@@ -8,7 +8,7 @@
 
 ### 准备工作
 
-1. windows系统(如果你使用UEFITool的linux或其他系统的版本的话, 就不是必要)
+1. windows系统, 主要用于安装并提取官方升级程序中的`.FL1`文件
 
 2. [UEFITool](https://github.com/LongSoft/UEFITool), 注意截止到目前不能使用带有NE(New Engine)的版本, 因为似乎还没有替换功能
 
@@ -34,4 +34,28 @@
    > 此上下载链接来自于[hamishcoleman/thinkpad-ec/Descriptions.txt](https://github.com/hamishcoleman/thinkpad-ec/blob/master/Descriptions.txt), 可能有错误注意对照一下[版本号](../README.md)。
 
 ### 自定义流程
+
+1. windows系统下点击运行升级系统, 选择合适的位置安装, 并且最后取消掉`Install ThinkPad BIOS Update Utility now`
+
+![install_upgrader](C:\respositories\Thinkpad-Mod-Guide\assets\pictures\patch_BIOS_and_EC\upgrader_install.png)
+
+2. 进入你的安装目录, 按如下路径将后缀为`.FL1`的文件复制到合适的位置
+
+![FL1_file](C:\respositories\Thinkpad-Mod-Guide\assets\pictures\patch_BIOS_and_EC\FL1_file.png)
+
+3. 对此`.FL1`文件进行“去头截取”操作, 之前可重命名此文件为`BIOS.FL1`
+
+   - **Windows:** powershell下运行
+
+	```powershell
+	[System.IO.File]::WriteAllBytes('4MB_BIOS.rom', ([System.IO.File]::ReadAllBytes('BIOS.FL1'))[464..(464+4194304-1)])
+	```
+
+   - **Linux:** [source](https://medium.com/@n4ru/1vyrain-an-xx30-thinkpad-jailbreak-fd4bb0bdb654)
+   
+   ```bash
+   dd if=BIOS.FL1 bs=1 of=4MB_BIOS.rom skip=464 count=41943044
+   ```
+
+4. 然后你就可以得到一个`4MB_BIOS.rom`文件, 这就是未打补丁和修改启动画面的原始rom文件, 接下来我们将使用`UEFITool`和`HxD`修改这个文件
 
