@@ -58,3 +58,4 @@
 
 - **[1vyrain](https://github.com/n4ru/1vyrain)** by n4ru
 - **[thinkpad-ec](https://github.com/hamishcoleman/thinkpad-ec)** by hamishcoleman
+- **[thinkpad-firmware-patches](https://github.com/digmorepaka/thinkpad-firmware-patches/)** by digmorepaka
