@@ -63,7 +63,9 @@
 
 ### 第三步：自定义开机动画 (可选)
 
-此方法通过直接修改固件内的 Logo 数据包来实现，避免了二次刷写的麻烦。
+[1vyrain](https://github.com/n4ru/1vyrain)中的方法是通过官方升级程序的自定义开机画面后刷写后, 再从设备中提取BIOS二进制文件;
+
+而此方法通过直接修改固件内的 Logo 数据包来实现，避免了二次刷写的麻烦。
 
 1.  使用 `UEFITool.exe` 打开 `4MB_BIOS.patched.rom` 文件。
     ![UEFITool_main](../assets/pictures/patch_BIOS_and_EC/UEFITool_main.png)
@@ -135,7 +137,7 @@
 
 在进行软件操作前，请先完成键盘的硬件修改。详细的硬件改装步骤（包括屏蔽针脚等）可以参考 [ThinkWiki 的经典键盘改装指南](https://www.thinkwiki.org/wiki/Install_Classic_Keyboard_on_xx30_Series_ThinkPads)或者一些视频网站上的实际操作内容。
 
- [thinkpad-ec](https://github.com/hamishcoleman/thinkpad-ec) 项目中的引导已经很完善了，以下是经过`gemini-2.5-pro`整理和总结的详细步骤, 一切以原项目中引导为主。
+[thinkpad-ec](https://github.com/hamishcoleman/thinkpad-ec) 项目中的引导已经很完善了，以下是经过`gemini-2.5-pro`整理和总结的详细步骤, 一切以原项目中引导为主。
 
 #### **第一阶段：准备 Linux 环境**
 
