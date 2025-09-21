@@ -33,12 +33,14 @@
 ### 第二步：提取并修补 BIOS 固件
 
 1.  在 Windows 系统下，运行您下载的 BIOS 升级程序。在安装向导中，选择一个合适的解压路径，并在最后一步**取消勾选** `Install ThinkPad BIOS Update Utility now`。
+
     ![install_upgrader](../assets/pictures/patch_BIOS_and_EC/upgrader_install.png)
 
-2.  进入您选择的解压目录，找到后缀为 `.FL1` 的文件（例如 `G2ETB5WW/$01G2000.FL1`），将其复制到您的工作目录下，并可重命名为 `BIOS.FL1` 以方便操作。
+3.  进入您选择的解压目录，找到后缀为 `.FL1` 的文件（例如 `G2ETB5WW/$01G2000.FL1`），将其复制到您的工作目录下，并可重命名为 `BIOS.FL1` 以方便操作。
+
     ![FL1_file](../assets/pictures/patch_BIOS_and_EC/FL1_file.png)
 
-3.  **提取 BIOS 核心固件 (移除文件头)**。此操作将从 `.FL1` 文件中剥离掉文件头，得到一个 4MB 大小的纯固件文件。
+5.  **提取 BIOS 核心固件 (移除文件头)**。此操作将从 `.FL1` 文件中剥离掉文件头，得到一个 4MB 大小的纯固件文件。
     -   **Windows (PowerShell):**
         ```powershell
         [System.IO.File]::WriteAllBytes('4MB_BIOS.rom', ([System.IO.File]::ReadAllBytes('BIOS.FL1'))[464..(464+4194304-1)])
@@ -48,16 +50,16 @@
         dd if=BIOS.FL1 bs=1 of=4MB_BIOS.rom skip=464 count=4194304
         ```
 
-4.  执行成功后，您将得到一个名为 `4MB_BIOS.rom` 的文件。这是未经任何修改的原始 BIOS 固件。
+6.  执行成功后，您将得到一个名为 `4MB_BIOS.rom` 的文件。这是未经任何修改的原始 BIOS 固件。
 
-5.  **应用补丁**。将 `4MB_BIOS.rom` 文件和 [patches.txt](./patches.txt) 文件（源自 [digmorepaka/thinkpad-firmware-patches](https://github.com/digmorepaka/thinkpad-firmware-patches)，本项目中提供的版本仅适用于 xx30 系列）放置在 `UEFIPatch` 所在的同一个文件夹下。您可以先打开 `patches.txt` 查看并按需启用或禁用特定补丁。
+7.  **应用补丁**。将 `4MB_BIOS.rom` 文件和 [patches.txt](./patches.txt) 文件（源自 [digmorepaka/thinkpad-firmware-patches](https://github.com/digmorepaka/thinkpad-firmware-patches)，本项目中提供的版本仅适用于 xx30 系列）放置在 `UEFIPatch` 所在的同一个文件夹下。您可以先打开 `patches.txt` 查看并按需启用或禁用特定补丁。
     ![UEFIPatch](../assets/pictures/patch_BIOS_and_EC/UEFIPatch.png)
     ![patches](../assets/pictures/patch_BIOS_and_EC/patches.png)
 
-6.  用鼠标左键按住 `4MB_BIOS.rom` 文件图标，将其**拖拽**到 `UEFIPatch.exe` 的程序图标上，然后松开鼠标。操作成功后，会自动生成一个名为 `4MB_BIOS.rom.patched` 的新文件。
+8.  用鼠标左键按住 `4MB_BIOS.rom` 文件图标，将其**拖拽**到 `UEFIPatch.exe` 的程序图标上，然后松开鼠标。操作成功后，会自动生成一个名为 `4MB_BIOS.rom.patched` 的新文件。
     ![patched](../assets/pictures/patch_BIOS_and_EC/patched.png)
 
-7.  这个新生成的文件就是解锁了高级菜单并移除了白名单的 BIOS 固件。您可以将其重命名为 `4MB_BIOS.patched.rom`。如果您不需要修改开机动画，请直接跳转到 **自定义开机动画 (可选)** 部分的最后一步**(可选) TPM 签名**部分。
+9.  这个新生成的文件就是解锁了高级菜单并移除了白名单的 BIOS 固件。您可以将其重命名为 `4MB_BIOS.patched.rom`。如果您不需要修改开机动画，请直接跳转到 **自定义开机动画 (可选)** 部分的最后一步 **(可选) TPM 签名** 部分。
 
 ### 第三步：自定义开机动画 (可选)
 
