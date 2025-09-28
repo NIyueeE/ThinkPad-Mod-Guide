@@ -108,7 +108,7 @@
 
 ## 二、刷写自定义 BIOS
 
-此步骤的前提与 [仅解锁 BIOS 指南](./patch_bios.md) 相同：您需要先完成 BIOS 降级，并制作好 1vyrain 的启动 U 盘。
+此步骤的前提与 [仅解锁 BIOS 指南](./patch_BIOS.md) 相同：您需要先完成 BIOS 降级，并制作好 1vyrain 的启动 U 盘。
 
 主要是利用了1vyrain提供的 `2) Flash a custom BIOS from URL`选项实现。
 ![1vyrain_option](../assets/pictures/patch_BIOS/1vyrain_option.jpg)
@@ -194,7 +194,7 @@
     -   (可选) 使用 `UEFITool` 和 `HxD` 提取、修改并替换固件中的开机动画文件。
 
 2.  **刷写自定义 BIOS**:
-    -   确保已按照 [另一份指南](./patch_bios.md) 完成了 BIOS 降级。
+    -   确保已按照 [另一份指南](./patch_BIOS.md) 完成了 BIOS 降级。
     -   制作 1vyrain 启动 U 盘，并从其启动。
     -   选择 `Flash from URL` 选项，利用另一台电脑和网线搭建临时 HTTP 服务，将自定义好的 ROM 文件刷入 ThinkPad。
 
