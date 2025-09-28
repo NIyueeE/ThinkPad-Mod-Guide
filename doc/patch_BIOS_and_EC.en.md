@@ -108,7 +108,7 @@ This guide's method avoids the need for a second flash by directly modifying the
 
 ## II. Flashing the Custom BIOS
 
-The prerequisites for this step are the same as in the [Guide: Flashing the Unlocked BIOS Only](./patch_bios.en.md): you must first complete the BIOS downgrade and create a bootable 1vyrain USB drive.
+The prerequisites for this step are the same as in the [Guide: Flashing the Unlocked BIOS Only](./patch_BIOS.en.md): you must first complete the BIOS downgrade and create a bootable 1vyrain USB drive.
 
 This process primarily utilizes the `2) Flash a custom BIOS from URL` option provided by 1vyrain.
 ![1vyrain_option](../assets/pictures/patch_BIOS/1vyrain_option.jpg)
@@ -194,7 +194,7 @@ The entire process can be summarized in three core stages:
     -   (Optional) Use `UEFITool` and `HxD` to extract, modify, and replace the boot animation files within the firmware.
 
 2.  **Flash the Custom BIOS**:
-    -   Ensure you have completed the BIOS downgrade as described in the [other guide](./patch_bios.md).
+    -   Ensure you have completed the BIOS downgrade as described in the [other guide](./patch_BIOS.en.md).
     -   Create a bootable 1vyrain USB drive and boot from it.
     -   Select the `Flash from URL` option, using another computer and an Ethernet cable to set up a temporary HTTP server, and flash your customized ROM file to the ThinkPad.
 
